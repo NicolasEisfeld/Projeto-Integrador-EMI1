@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --main-color: #F8F9FA;
+    --sec-color: #2265a8 ;
+    --background: #1D1C1C;
+    --menu: #0A0A0A;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+    transition: 0.2 linear;
+    list-style: none;
+}
+
+.page {
+    align-items: left;
+    justify-content: left;
+    text-align: justify;
+    min-width: 20rem;
+    color: var(--main-color);
+    background-color: var(--background);
+    font-family: Minecraftia;
+    font-size: 1.125rem;
+    line-height: 1.8;
+    word-spacing: 0.125rem;
+    letter-spacing: 0.019rem;
+    margin: 5rem 4rem;
+}
+a {
+    color: var(--sec-color);
+}
