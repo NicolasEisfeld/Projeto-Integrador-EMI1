@@ -3,7 +3,9 @@
 :root {
   --main-color: #f8f9fa;
   --sec-color: #2875c2;
+  --tri-color: #1e4872;
   --background: #1d1c1c;
+  --border: #2c2c2c;
   --menu: #161616;
 }
 
@@ -52,9 +54,25 @@ header.menu-navegador {
 }
 
 
+
 #Pré-IFRS {
   color: var(--sec-color)
 }
+
+.caixa {
+  background-color: var(--tri-color);
+  padding: 1rem 2rem;
+  border-radius: 0.7rem
+}
+
+.caixa-invi {
+  padding: 1rem 2rem;
+  border-style: solid;
+  border-width: 0.08rem;
+  border-color: var(--border);
+  border-radius: 0.7rem;
+}
+
 h1 {
   font-size: 2.8rem;
 }
@@ -66,7 +84,7 @@ a {
 main {
   background-color: var(--background);
   background-size: cover;
-  height: 92vh;
+  height: relative;
   margin: 5rem 4rem;
 }
 
