@@ -36,6 +36,24 @@ header.menu-navegador {
   width: 100%;
 }
 
+.menu-navegador {
+  background-color: #161616;
+}
+
+.banner {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+#Github {
+  
+  margin-right: 4rem;
+}
+
 .nav-bar {
   height: 100%;
   padding: 2.5rem 4rem;
@@ -95,4 +113,34 @@ footer {
   text-align: center;
   font-size: 0.875rem;
   padding: 2rem 1rem 0.5rem 1rem;
+}
+
+.formulario {
+  margin: 2rem 0;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  width: 28rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border);
+}
+
+button {
+  background-color: var(--sec-color);
+  color: var(--main-color);
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--tri-color);
 }

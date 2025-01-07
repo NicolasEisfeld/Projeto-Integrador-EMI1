@@ -1,77 +1,111 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
     <title>Projeto Integrador I</title>
-</head>
+  </head>
 
-<body class="pagina">
+  <body class="pagina">
     <!--Navegador-->
     <header class="menu-navegador">
+        <br />
+        <div class="banner">
+          <img id="Imagem-Logo" src="Banner - Pré-IFRS.png" width="1250" height="120">
+          <b id="Github"><a href="https://www.github.com/NicolasEisfeld/">Github</a></b>
+         </div>
         <nav class="nav-bar">
-            <ul class="menu">
-                <li><a href="index.html" id="Home">Home</a></li>
-                <li><a href="objetivos.html" id="Objetivos">Objetivos</a></li>
-                <li><a href="analise.html" id="Análise">Análise</a></li>
-                <li><a href="proposta.html" id="Proposta">Proposta</a></li>
-                <li><a href="problema.html" id="Problemas">Problemas</a></li>
-                <li><a href="formulario.html" id="Formulário">Formulário</a></li>
-            </ul>
-            <b><a href="https://www.github.com/NicolasEisfeld/">Github</a></b>
+          <ul class="menu">
+            <li><a href="index.html" id="Home">Home</a></li>
+            <li><a href="objetivos.html" id="Objetivos">Objetivos</a></li>
+            <li><a href="analise.html" id="Análise">Análise</a></li>
+            <li><a href="proposta.html" id="Proposta">Proposta</a></li>
+            <li><a href="problema.html" id="Problemas">Problemas</a></li>
+            <li><a href="formulario.html" id="Formulário">Formulário</a></li>
+            <li><a href="contato.html" id="Contato">Contato</a></li>
+          </ul>
         </nav>
-    </header>
+      </header>
 
     <br />
     <!--Introdução-->
     <main class="principal">
-        <img src="Logotipo - Pré-IFRS.png" alt="Logotipo - Pré-IFRS" width="200" height="119">
-        <section class="cabeçalho">
-            <h1 id="Título">Formulário</h1>
-            <h2 id="Subtítulo">Gamificação do <span id="Pré-IFRS">Pré-IFRS Erechim</span></h2>
-            <hr />
-        </section>
+      <section class="cabeçalho">
+        <h1 id="Título">Formulário</h1>
+        <h2 id="Subtítulo">
+          Gamificação do <span id="Pré-IFRS">Pré-IFRS Erechim</span>
+        </h2>
+        <hr />
+      </section>
 
-        <br />
+      <br />
 
-        <section class="introdução">
-            <div class="caixa">
-                <h3 id="Subtítulo2">Introdução</h3>
-                <p>
-                    Tivemos dois bancos de dados para analisar durante os 2 primeiros trimestres
-                    <li>- Pesquisa feita nos alunos do Instituto em relação ao Pré-IFRS.</li>
-                    <li>- Acesso aos dados referente aos alunos ingressantes de 2024 para analisarmos as escolas dos
-                        alunos do processo seletivo.</li>
-            </div><br />
-            <div class="caixa">
-                Através disso, descobrimos que o Pré-IFRS não é uma ferramenta em que a maioria dos alunos utilizaram,
-                ou até mesmo ter conhecido durante o processo seletivo. Para podermos fundamentar uma ferramente virtual
-                para os estudos preparatórios para o ingresso do Instituto, primeiramente devemos trabalhar na
-                divulgação e na elaboração de um material de qualidade para o Pré-IFRS <i>Campus Erechim</i>. <br />
-            </div><br />
-            <div class="caixa">
-                Nesse aspecto, é importante divulgarmos nosso projeto presencialmente em escolas públicas que tem esta
-                possibilidade, para facilitar o acesso as informações referentes ao próprio Instituto e o curso
-                preparatório para o ingresso.
-            </div>
-            </p>
-        </section>
+      <section class="formulario">
+        <form action="#" method="post">
+          <div class="caixa">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required />
+          </div>
+          <br />
+          <div class="caixa">
+            <label for="telefone">Telefone:</label>
+            <input type="text" id="telefone" name="telefone" required />
+          </div>
+          <br />
+          <div class="caixa">
+            <label for="genero">Gênero:</label>
+            <select id="genero" name="genero" required>
+              <option value="" disabled selected>Selecione seu gênero</option>
+              <option value="masculino">Masculino</option>
+              <option value="feminino">Feminino</option>
+              <option value="outro">Outro</option>
+            </select>
+          </div>
+          <br />
+          <div class="caixa">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <br />
+          <div class="caixa">
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required />
+          </div>
+          <br />
+          <div class="caixa">
+            <label for="confirmar-senha">Confirmar Senha:</label>
+            <input
+              type="password"
+              id="confirmar-senha"
+              name="confirmar-senha"
+              required
+            />
+          </div>
+          <br />
+          <div class="caixa">
+            <button type="submit">Cadastrar</button>
+          </div>
+        </form>
+      </section>
     </main>
 
     <br />
 
     <!--Rodapé-->
     <footer class="rodapé">
-        <p id="Copyright">
-            Copyright &lt;<a href="https://www.github.com/NicolasEisfeld/">NicolasEisfeld</a>
-            /&gt; 2024
-        </p>
-        <p>Feito pelo estudante Nicolas Eisfeld Ferreira</p>
-        <p>Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul - Campus Erechim</p>
-        <br />
+      <p id="Copyright">
+        Copyright &lt;<a href="https://www.github.com/NicolasEisfeld/"
+          >NicolasEisfeld</a
+        >
+        /&gt; 2024
+      </p>
+      <p>Feito pelo estudante Nicolas Eisfeld Ferreira</p>
+      <p>
+        Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul
+        - Campus Erechim
+      </p>
+      <br />
     </footer>
-</body>
-
+  </body>
 </html>
